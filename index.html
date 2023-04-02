@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calendar</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="card-header" id="monthAndYear"></h3>
+      <table class="table" id="calendar">
+        <thead>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+        </thead>
+        <tbody id="calendar-body"></tbody>
+      </table>
+      <div class="form-inline">
+        <button class="btn" id="previous" onclick="previous()">Previous</button>
+        <button class="btn" id="next" onclick="next()">Next</button>
+      </div>
+      <form class="form-inline">
+        <label class="lead" for="month"></label>
+        <select class="form-control" name="month" id="month" onchange="jump()"></select>
+        <label for="year"></label>
+        <select class="form-control" name="year" id="year" onchange="jump()"></select>
+      </form>
+    </div>
+    <script src="scripts.js" defer></script>
+  </body>
+</html>
